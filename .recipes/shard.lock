@@ -1,0 +1,6 @@
+version: 2.0
+shards:
+  vue-recipe:
+    git: https://github.com/progressive-amber/vue-recipe.git
+    version: 0.1.0+git.commit.9972533b9c6744efa77e170be372ce1c12b9d577
+

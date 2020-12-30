@@ -1,0 +1,7 @@
+---
+name: recipe
+version: 0.1.0
+dependencies:
+  vue-recipe:
+    github: progressive-amber/vue-recipe
+    branch: master

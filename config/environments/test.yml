@@ -1,0 +1,37 @@
+secret_key_base: oPw5kKb1HpxVU1pBIcteCogKKVz7fd7cVLTXC_YPqe0
+port: 9091
+name: chess
+logging:
+  severity: debug
+  colorize: true
+  filter:
+    - password
+    - confirm_password
+  context:
+    - request
+    - session
+    - headers
+    - cookies
+    - params
+
+host: 0.0.0.0
+port_reuse: false
+process_count: 1
+# ssl_key_file:
+# ssl_cert_file:
+redis_url: "redis://localhost:6379"
+
+database_url: postgres://postgres:@localhost:5432/chess_test
+
+auto_reload: true
+
+session:
+  key: amber.session
+  store: signed_cookie
+  expires: 0
+
+smtp:
+  enabled: false
+
+secrets:
+  description: Store your development secrets credentials and settings here.
