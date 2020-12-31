@@ -2,6 +2,8 @@
   <div id="app">
     <img id="amber-logo" alt="Amber logo" src="./assets/amber-logo.png"> <br>
     <img id="vue-logo" alt="Vue logo" src="./assets/vue-logo.png">
+    <img src="./assets/pieces/neo/white/rook.png">
+    <img src="./assets/pieces/neo/black/rook.png">
     <HelloWorld msg="Welcome to Amber with Vue"/>
   </div>
 </template>

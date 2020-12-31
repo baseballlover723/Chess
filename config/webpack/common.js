@@ -18,8 +18,7 @@ let config = {
     }
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.(js)$/,
         exclude: /node_modules/,
         use: {
@@ -45,9 +44,12 @@ let config = {
       {
         test: /\.(woff|woff2|eot|ttf|otf|png|svg|jpg|gif)$/,
         exclude: /node_modules/,
-        use: [
-          'file-loader?name=/[name].[ext]'
-        ]
+        loader: 'file-loader',
+        options: {
+          name(file) {
+            return '/' + path.relative(path.resolve(__dirname, '../../frontend-vue/src/assets'), file);
+          }
+        }
       }
     ]
   },
