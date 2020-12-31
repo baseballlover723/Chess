@@ -10,7 +10,7 @@ shards:
 
   ameba:
     git: https://github.com/veelenga/ameba.git
-    version: 0.12.1
+    version: 0.13.3
 
   callback:
     git: https://github.com/amberframework/callback.git
@@ -46,7 +46,7 @@ shards:
 
   garnet_spec:
     git: https://github.com/amberframework/garnet-spec.git
-    version: 0.2.0
+    version: 0.3.0
 
   granite:
     git: https://github.com/amberframework/granite.git
@@ -62,7 +62,7 @@ shards:
 
   jasper_helpers:
     git: https://github.com/amberframework/jasper-helpers.git
-    version: 0.2.5
+    version: 0.3.0
 
   json_mapping:
     git: https://github.com/crystal-lang/json_mapping.cr.git
@@ -78,7 +78,7 @@ shards:
 
   markd:
     git: https://github.com/icyleaf/markd.git
-    version: 0.2.1
+    version: 0.1.2+git.commit.20962e6cfb4513eb94e6549fd8b735b15d10c6d1
 
   micrate:
     git: https://github.com/amberframework/micrate.git
@@ -109,8 +109,8 @@ shards:
     version: 2.6.0
 
   selenium:
-    git: https://github.com/paulcsmith/selenium-webdriver-crystal.git
-    version: 0.3.0+git.commit.427376b990dc361702044fa3997ad02de85bf0a7
+    git: https://github.com/ysbaddaden/selenium-webdriver-crystal.git
+    version: 0.4.0
 
   shell-table:
     git: https://github.com/luckyframework/shell-table.cr.git
