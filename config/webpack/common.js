@@ -18,9 +18,9 @@ let config = {
       amber: path.resolve(__dirname, '../../lib/amber/assets/js/amber.js')
     }
   },
+  context: path.resolve(__dirname, '../../src/assets'),
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.(sass|scss|css)$/,
         exclude: /node_modules/,
         use: [
@@ -30,18 +30,14 @@ let config = {
         ]
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
+        test: /.*\.(woff|woff2|eot|ttf|otf|png|svg|jpg|gif)$/,
         exclude: /node_modules/,
-        use: [
-          'file-loader?name=/images/[name].[ext]'
-        ]
-      },
-      {
-        test: /\.(woff|woff2|eot|ttf|otf)$/,
-        exclude: /node_modules/,
-        use: [
-          'file-loader?name=/[name].[ext]'
-        ]
+        loader: 'file-loader',
+        options: {
+          name(file) {
+            return '/' + path.relative(path.resolve(__dirname, '../../src/assets'), file);
+          }
+        }
       },
       {
         test: /\.js$/,
