@@ -4,7 +4,7 @@
   "description": "Chess with Amber",
   "private": true,
   "author": "Philip Ross",
-  "license": "UNLICENSED",
+  "license": "AGPLv3",
   "scripts": {
     "build": "webpack --config config/webpack/development.js",
     "watch": "webpack -w --config config/webpack/development.js",
