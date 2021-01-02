@@ -18,7 +18,7 @@ targets:
 dependencies:
   amber:
     github: amberframework/amber
-    version: 0.35.0
+    version: ~> 0.35.0
     #branch: master
 
   granite:
@@ -31,7 +31,7 @@ dependencies:
 
   jasper_helpers:
     github: amberframework/jasper-helpers
-    version: ~> 0.2.5
+    version: ~> 0.3.0
 
   pg:
     github: will/crystal-pg
@@ -39,12 +39,12 @@ dependencies:
 
   citrine-i18n:
     github: amberframework/citrine-i18n
-    version: ~> 0.4.0
+    version: ~> 0.4
 
 development_dependencies:
   garnet_spec:
     github: amberframework/garnet-spec
-    version: 0.2.0
+    version: ~> 0.3
   ameba:
     github: veelenga/ameba
-    version: ~> 0.12.1
+    version: ~> 0.13
